@@ -17,7 +17,22 @@
 http://localhost:9000
 </sonar.host.url></properties>
 </profile>
-</profiles>      
+</profiles>
+        
+<distributionManagement>
+    <!-- use the following if you're not using a snapshot version. -->
+    <repository>
+        <id>nexus</id>
+        <name>RepositoryProxyRel</name>
+        <url>http://127.0.0.1:8081/nexus/content/repositories/releases/</url>
+    </repository>
+    <!-- use the following if you ARE using a snapshot version. -->
+    <snapshotRepository>
+        <id>nexus</id>
+        <name>RepositoryProxySnap</name>
+        <url>http://127.0.0.1:8081/nexus/content/repositories/snapshots/</url>
+    </snapshotRepository>
+</distributionManagement>
 
   <modules>
     <module>multi-module</module>
