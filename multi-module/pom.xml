@@ -20,7 +20,6 @@
     <module>server</module>
     <module>webapp</module>
   </modules>
-
   <distributionManagement>
     <!-- use the following if you're not using a snapshot version. -->
     <repository>
@@ -35,7 +34,6 @@
         <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
     </snapshotRepository>
 </distributionManagement>
-
   <build>
     <plugins>
       <plugin>
