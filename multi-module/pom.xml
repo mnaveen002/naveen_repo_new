@@ -22,20 +22,19 @@
   </modules>
 
   <distributionManagement>
-<repository>
-<id>nexus</id>
-<url>http://localhost:8081/repository/maven-releases</url>
-</repository>
-<snapshotRepository>
-<id>nexus</id>
-<url>http://localhost:8081/repository/maven-snapshots</url>
-</snapshotRepository>      
-           <site>
-      <id>site-server</id>
-      <name>Test Project Site</name>
-      <url>file:///tmp/multi-module-site</url>
-    </site>
-  </distributionManagement>
+    <!-- use the following if you're not using a snapshot version. -->
+    <repository>
+        <id>nexus</id>
+        <name>RepositoryProxyRel</name>
+        <url>http://127.0.0.1:8081/nexus/content/repositories/releases/</url>
+    </repository>
+    <!-- use the following if you ARE using a snapshot version. -->
+    <snapshotRepository>
+        <id>nexus</id>
+        <name>RepositoryProxySnap</name>
+        <url>http://127.0.0.1:8081/nexus/content/repositories/snapshots/</url>
+    </snapshotRepository>
+</distributionManagement>
 
   <build>
     <plugins>
