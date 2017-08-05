@@ -22,7 +22,15 @@
   </modules>
 
   <distributionManagement>
-    <site>
+<repository>
+<id>nexus</id>
+<url>http://localhost:8081/repository/maven-releases</url>
+</repository>
+<snapshotRepository>
+<id>nexus</id>
+<url>http://localhost:8081/repository/maven-snapshots</url>
+</snapshotRepository>      
+           <site>
       <id>site-server</id>
       <name>Test Project Site</name>
       <url>file:///tmp/multi-module-site</url>
