@@ -17,8 +17,7 @@
 http://localhost:9000
 </sonar.host.url></properties>
 </profile>
-</profiles>
-        
+</profiles>        
 <distributionManagement>
     <!-- use the following if you're not using a snapshot version. -->
     <repository>
@@ -33,7 +32,6 @@ http://localhost:9000
         <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
     </snapshotRepository>
 </distributionManagement>
-
   <modules>
     <module>multi-module</module>
     <module>single-module</module>
