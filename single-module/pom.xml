@@ -17,12 +17,14 @@
   </properties>
 
   <distributionManagement>
-    <site>
-      <id>site-server</id>
-      <name>Test Project Site</name>
-      <url>file:///tmp/single-module-site</url>
-    </site>
-  </distributionManagement>
+ <repository>
+<id>nexus</id>
+<url>http://localhost:8081/repository/maven-releases</url>
+</repository>
+<snapshotRepository>
+<id>nexus</id>
+<url>http://localhost:8081/repository/maven-snapshots</url>
+</snapshotRepository> 
 
   <build>
     <finalName>${project.artifactId}</finalName>
